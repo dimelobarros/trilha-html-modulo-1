@@ -239,38 +239,295 @@
     <hr />
 
     <h2 id="ferramentas">Ferramentas utilizadas</h2>
+    <p>
+      <strong>As ferramentas utilizadas</strong> com HTML incluem principalmente
+      editores de código para escrever a marcação, navegadores web para
+      visualizar o resultado e ferramentas de desenvolvedor integradas para
+      depuração.
+    </p>
+
+    <h3>Editores de Código/Texto</h3>
+    <p>
+      São os softwares onde o código HTML é escrito. Eles variam de editores de
+      texto simples a IDEs
+      <i>(Ambientes de Desenvolvimento Integrado)</i> completos.
+      <strong>Visual Studio Code <i>(VS Code)</i>: </strong>Um editor de
+      código-fonte gratuito e popular, leve e com muitas extensões úteis para
+      HTML, CSS e JavaScript.
+    </p>
+
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="inspetor">Usando o Inspetor de Elementos</h2>
+    <p>
+      <strong>O Inspetor de Elementos <i>(ou DevTools)</i></strong> é uma
+      ferramenta integrada aos navegadores que permite aos desenvolvedores
+      visualizar e editar temporariamente o código HTML e CSS de uma página web
+      em tempo real.
+    </p>
+
+    <h3>Descrição resumida:</h3>
+    <ul>
+      <li>
+        <strong> Visualização da estrutura: </strong>
+        Exibe a estrutura hierárquica do código HTML <i>(árvore DOM)</i> da
+        página, permitindo ver como os elementos estão aninhados.
+      </li>
+      <li>
+        <strong> Inspeção de propriedades: </strong>
+        Ao selecionar um elemento na página, a ferramenta mostra imediatamente
+        as propriedades CSS aplicadas a ele, como cores, margens, fontes e
+        posicionamento.
+      </li>
+      <li>
+        <strong> Edição e teste em tempo real: </strong>
+        Permite modificar o HTML ou o CSS diretamente na interface da ferramenta
+        e ver as mudanças aplicadas na página instantaneamente, sem alterar o
+        código-fonte original ou recarregar a página.
+      </li>
+      <li>
+        <strong> Depuração: </strong>
+        É essencial para depurar problemas de layout, identificar qual código
+        está causando um determinado comportamento visual e testar soluções
+        antes de implementá-las definitivamente.
+      </li>
+      <li>
+        <strong> Temporário: </strong>
+        Quaisquer alterações feitas no inspetor são apenas locais e temporárias;
+        elas desaparecem assim que a página é atualizada.
+      </li>
+    </ul>
+
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <p>
+      A estrutura básica de um documento HTML funciona como o esqueleto de uma
+      página web, organizando o conteúdo em duas seções principais: o cabeçalho
+      <mark>(head)</mark> e o corpo <mark>(body)</mark>.
+    </p>
+
+    <h3>Componentes Essenciais</h3>
+    <p>Todo documento HTML5 funcional possui as seguintes tags obrigatórias:</p>
+
+    <ul>
+      <li>
+        <strong>(!DOCTYPE html):</strong>
+        Esta declaração informa ao navegador a versão do HTML utilizada (neste
+        caso, HTML5).
+      </li>
+      <li>
+        <strong> (html)(/html): </strong>
+        O elemento raiz que envolve todo o conteúdo da página. Tudo o mais fica
+        dentro deste par de tags.
+      </li>
+      <li>
+        <strong> (head)(/head): </strong>
+        Contém metadados e informações sobre o documento que não são visíveis
+        para o usuário na tela, como o título da página, links para arquivos CSS
+        e definições de codificação de caracteres (ex: (meta charset="UTF-8")).
+      </li>
+      <li>
+        <strong> (body)(/body): </strong>
+        Contém todo o conteúdo visível da página, como textos, imagens, links,
+        tabelas e formulários. É o que o usuário vê e interage no navegador.
+      </li>
+    </ul>
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="tags">Falando sobre Tags</h2>
+    <p>
+      As tags HTML são a base da construção de páginas web. Elas funcionam como
+      etiquetas que marcam e organizam o conteúdo, instruindo o navegador sobre
+      como exibir cada elemento na tela.
+    </p>
+
+    <h3>O que são Tags HTML?</h3>
+    <p>
+      "Tag" significa literalmente "etiqueta". No HTML, as tags têm o objetivo
+      de delimitar onde um elemento começa e onde termina.
+    </p>
+
+    <ul>
+      <li>
+        <strong> Estrutura: </strong>
+        A maioria das tags funciona em pares: uma tag de abertura (ex: (p)) e
+        uma tag de fechamento (ex: (/p)). O conteúdo fica entre elas.
+      </li>
+      <li>
+        <strong> Função Semântica: </strong>
+        Elas fornecem significado (semântica) ao conteúdo. Por exemplo, a tag
+        (em) indica ênfase, enquanto a tag (a) define um link.
+      </li>
+    </ul>
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="atributos">Atributos básicos</h2>
+    <p>
+      Os atributos HTML fornecem informações adicionais sobre os elementos,
+      modificando suas características ou comportamento. Eles sempre aparecem na
+      tag de abertura do elemento e consistem em um nome seguido por um sinal de
+      igual (=) e o valor entre aspas.
+    </p>
+
+    <h3>Principais Atributos Básicos do HTML</h3>
+
+    <ul>
+      <li>
+        <strong> id: </strong>
+        Define um identificador único para um elemento em toda a página. É
+        crucial para estilização com CSS ou manipulação via JavaScript.
+      </li>
+      <li>
+        <strong> class: </strong>
+        Atribui uma ou mais classes CSS ao elemento, permitindo agrupar
+        elementos com estilos semelhantes.
+      </li>
+      <li>
+        <strong> src: </strong>
+        Especifica a fonte (source) de conteúdo externo, como o caminho de uma
+        imagem (img) ou um arquivo de script (script).
+      </li>
+      <li>
+        <strong> href: </strong>
+        Define o destino do link (hypertext reference) em uma tag de âncora (a),
+        direcionando o usuário para outra URL ou seção da página.
+      </li>
+      <li>
+        <strong> alt: </strong>
+        Fornece um texto alternativo para imagens (img), essencial para
+        acessibilidade (leitores de tela) e caso a imagem não possa ser
+        carregada.
+      </li>
+      <li>
+        <strong> style: </strong>
+        Permite aplicar estilos CSS diretamente no elemento (estilo inline).
+      </li>
+      <li>
+        <strong> lang: </strong>
+        Define o idioma principal do conteúdo do elemento, geralmente usado na
+        tag (html) para melhorar a interpretação por navegadores e ferramentas
+        de acessibilidade.
+      </li>
+      <li>
+        <strong> title: </strong>
+        Oferece informações extras sobre o elemento, frequentemente exibidas
+        como uma dica de ferramenta (tooltip) quando o mouse passa sobre ele.
+      </li>
+    </ul>
+
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="executando">Executando uma página HTML</h2>
+    <p>
+      A execução de uma página HTML refere-se ao processo de carregar e
+      interpretar um arquivo de linguagem de marcação de hipertexto (HTML) em um
+      navegador web (como Google Chrome, Firefox ou Edge). O navegador lê o
+      código HTML, que funciona como o "esqueleto" do site, e o renderiza
+      visualmente na tela para o usuário, exibindo textos, imagens, links e
+      outros elementos conforme especificado pelas tags.
+    </p>
+
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="textos">Textos</h2>
+    <p>
+      Textos em HTML são o conteúdo visível e estruturado de uma página web, que
+      é formatado e organizado usando "tags" de marcação. O HTML usa essas tags
+      para instruir o navegador sobre como exibir títulos, parágrafos, listas e
+      outros elementos, funcionando como o esqueleto do site.
+    </p>
+
+    <h3>Resumo dos Textos em HTML</h3>
+
+    <ul>
+      <li>
+        <strong> Linguagem de Marcação: </strong>
+        O HTML (HyperText Markup Language) não é uma linguagem de programação,
+        mas sim uma linguagem de marcação descritiva. As tags marcam o conteúdo
+        para dar-lhe estrutura e significado (semântica).
+      </li>
+      <li>
+        <strong> Tags e Elementos: </strong>
+        O conteúdo textual é inserido entre uma etiqueta de abertura e uma de
+        fechamento (ex: (p)Conteúdo aqui(/p)), formando um elemento. O navegador
+        lê essas marcações e renderiza o texto formatado para o usuário.
+      </li>
+      <li>
+        <strong> Estrutura e Semântica: </strong>
+        O objetivo principal do HTML é estruturar o conteúdo. Tags semânticas,
+        como (header), (footer), (p) (parágrafo), (h1) a (h6) (títulos), e
+        (strong) (texto importante), ajudam os navegadores e motores de busca a
+        entenderem a função de cada parte do texto.
+      </li>
+      <li>
+        <strong> Formatação: </strong>
+        Embora o HTML estruture o texto, a estilização visual (cores, fontes,
+        tamanhos exatos, alinhamento) é predominantemente realizada com CSS
+        (Cascading Style Sheets).
+      </li>
+      <li>
+        <strong> Principais Elementos de Texto: </strong>
+        (p): Define um parágrafo de texto. (h1) a (h6): Usados para títulos e
+        subtítulos, onde (h1) é o mais importante e maior. (strong) ou (b):
+        Deixam o texto em negrito, indicando forte importância (strong) ou
+        apenas um destaque estilístico (b). (em) ou (i): Usados para itálico,
+        indicando ênfase (em) ou fins estilísticos (i). (ul), (ol) e (li):
+        Usados para criar listas (não ordenadas e ordenadas, respectivamente).
+      </li>
+    </ul>
+
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="listas">Listas ordenadas e não ordenada</h2>
+
+    <p>
+      Listas ordenadas (ol) usam números/letras para indicar sequência
+      (instruções), enquanto listas não ordenadas (ul) usam marcadores (bullets)
+      para itens onde a ordem não importa (tópicos, ingredientes). Ambas usam
+      (li) para os itens, sendo a principal diferença a tag principal ((ol) vs
+      (ul)) e o propósito (sequência vs coleção), impactando a semântica e a
+      apresentação visual (números vs marcadores).
+    </p>
     <small><a href="#inicio">Voltar</a></small>
     <hr />
 
     <h2 id="links">Links</h2>
+    <p>
+      Os links em HTML, também chamados de hiperlinks, são a espinha dorsal da
+      navegação na web, permitindo a conexão entre diferentes páginas,
+      documentos ou recursos.
+    </p>
+    <h3>O que são e como funcionam?</h3>
+    <ul>
+      <li>
+        <strong> Propósito: </strong>
+        Eles transformam texto ou imagens em elementos clicáveis que direcionam
+        o usuário para um novo destino, seja dentro do mesmo site (link interno)
+        ou para um site externo.
+      </li>
+      <li>
+        <strong> Elemento Chave: </strong>
+        O elemento HTML usado para criar um link é a tag de âncora (a).
+      </li>
+      <li>
+        <strong> Atributo Essencial: </strong>
+        O atributo href (Hypertext Reference) é fundamental. É nele que se
+        especifica o URL ou o caminho do arquivo de destino.
+      </li>
+      <li>
+        <strong> Conteúdo Clicável: </strong>
+        Tudo o que estiver contido entre a tag de abertura (a) e a de fechamento
+        (/a) torna-se clicável.
+      </li>
+    </ul>
     <small><a href="#inicio">Voltar</a></small>
     <hr />
   </body>
