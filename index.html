@@ -1,9 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Desafio Módulo 1</title>
   </head>
-  <body></body>
+  <body>
+    <!--
+    Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+    Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).
+    -->
+    <h1 id="inicio">Desafio Módulo 1</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#historia">História da Web</a></li>
+      <li><a href="#clients">O que são Clients?</a></li>
+      <li><a href="#servers">O que são Servers?</a></li>
+      <li><a href="#linguagens">Sobre linguagens de programação web</a></li>
+      <li><a href="#ferramentas">Ferramentas utilizadas</a></li>
+      <li><a href="#inspetor">Usando o Inspetor de Elementos</a></li>
+      <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+      <li><a href="#tags">Falando sobre Tags</a></li>
+      <li><a href="#atributos">Atributos básicos</a></li>
+      <li><a href="#executando">Executando uma página HTML</a></li>
+      <li><a href="#textos">Textos</a></li>
+      <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+    <hr />
+
+    <h2 id="historia">História da Web</h2>
+    <p>
+      A história da Web começa com <strong>Tim Berners-Lee</strong> no CERN em
+      1989, criando a World Wide Web <i>(WWW)</i> para cientistas compartilharem
+      informações via hipertexto, utilizando HTML, HTTP e URLs para navegar por
+      documentos interligados, algo que evoluiu de uma rede acadêmica para o
+      fenômeno comercial e social que conhecemos hoje, impulsionado por
+      navegadores e o surgimento de provedores comerciais nos anos 90,
+      transformando a internet de uma infraestrutura para uma plataforma de
+      conteúdo público e interação.
+    </p>
+
+    <ol>
+      <li>
+        <h3>
+          As Origens <sub><i>(Anos 60-80)</i></sub>
+        </h3>
+      </li>
+
+      <ul>
+        <li>
+          <strong>ARPANET: </strong>A base da internet surgiu com a
+          <mark>ARPANET</mark> nos anos 60, uma rede militar e acadêmica para
+          troca de dados.
+        </li>
+        <li>
+          <strong>Conceitos: </strong>O desenvolvimento de protocolos como
+          TCP/IP e redes de pesquisa <i>(como a CYCLADES)</i> foram cruciais.
+        </li>
+      </ul>
+
+      <li>
+        <h3>
+          O Nascimento da Web <sub><i>(1989-1991)</i></sub>
+        </h3>
+      </li>
+
+      <ul>
+        <li>
+          <strong>Tim Berners-Lee: </strong>No CERN, ele desenvolveu o conceito
+          da WWW para facilitar o compartilhamento de informações entre
+          cientistas.
+        </li>
+        <li>
+          <strong>Tecnologias-Chave: </strong>Criou <mark>HTML</mark>
+          <i>(linguagem das páginas)</i>, HTTP
+          <i>(protocolo de comunicação)</i> e URI/URL <i>(endereços)</i>.
+        </li>
+        <li>
+          <strong>Lançamento: </strong>Em 1991, o código e o software para criar
+          e visualizar páginas foram disponibilizados, tornando a Web acessível
+          ao público.
+        </li>
+      </ul>
+
+      <li>
+        <h3>
+          Popularização e Evolução <sub><i>(Anos 90 em diante)</i></sub>
+        </h3>
+      </li>
+
+      <ul>
+        <li>
+          <strong>Navegadores: </strong>Ferramentas como o navegador
+          "WorldWideWeb" e depois o Cello <i>(para Windows)</i> tornaram a
+          navegação mais fácil.
+        </li>
+        <li>
+          <strong>Expansão Comercial: </strong>Provedores de acesso surgiram,
+          levando a Web para além do ambiente acadêmico e impulsionando o uso
+          comercial e o boom das ".com".
+        </li>
+        <li>
+          <strong>Web 2.0 e Além: </strong>A Web evoluiu de páginas estáticas
+          <i>(Web 1.0)</i> para plataformas interativas e sociais, focando na
+          produção de conteúdo pelo usuário, inteligência artificial e
+          experiências imersivas.
+        </li>
+      </ul>
+    </ol>
+
+    <p>
+      Em resumo, a Web transformou a infraestrutura da Internet em um espaço
+      global de informação, permitindo que qualquer pessoa publicasse e
+      acessasse conteúdo, mudando fundamentalmente a comunicação e o acesso ao
+      conhecimento.
+    </p>
+
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="clients">O que são Clients?</h2>
+    <p>
+      <strong>O cliente </strong>refere-se ao software ou dispositivo que
+      solicita e recebe informações ou serviços de um servidor. O principal
+      exemplo de cliente em HTML é o seu navegador web
+      <i>(como Google Chrome, Firefox ou Safari)</i>.
+    </p>
+
+    <h3>Em resumo:</h3>
+    <ul>
+      <li>
+        <strong>O que é: </strong>O cliente é o lado da comunicação que interage
+        diretamente com o usuário final. É onde o código HTML, CSS e JavaScript
+        é interpretado e exibido.
+      </li>
+      <li>
+        <strong>Função: </strong>O navegador do cliente envia solicitações
+        <i>(por exemplo, quando você digita um endereço ou clica em um link)</i>
+        para um servidor e, em troca, recebe os dados
+        <i>(como a página HTML)</i> para processá-los e mostrá-los na tela.
+      </li>
+      <li>
+        <strong>HTML: </strong>O HTML é uma linguagem de marcação do lado do
+        cliente <i>(client-side)</i>, ou seja, ele é executado e renderizado no
+        próprio dispositivo do usuário, não no servidor.
+      </li>
+    </ul>
+
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="servers">O que são Servers?</h2>
+    <p>
+      <strong>Os servidores web </strong>são computadores potentes ou softwares
+      que armazenam e entregam arquivos, como páginas HTML, imagens e vídeos,
+      aos navegadores dos usuários.
+    </p>
+    <h3>Em resumo, a função principal de um servidor em relação ao HTML é:</h3>
+    <ul>
+      <li>
+        <strong>Hospedagem: </strong>
+        O servidor armazena os arquivos HTML do seu site.
+      </li>
+      <li>
+        <strong>Comunicação <i>(Protocolo HTTP)</i>:</strong> Quando um usuário
+        digita um endereço <i>(URL)</i> no navegador, o navegador envia uma
+        solicitação <i>(usando o protocolo HTTP)</i> ao servidor.
+      </li>
+      <li>
+        <strong>Entrega de Conteúdo: </strong>O servidor processa essa
+        solicitação e envia de volta os arquivos HTML necessários para que a
+        página seja carregada e visualizada corretamente no navegador do
+        cliente.
+      </li>
+    </ul>
+    <p>
+      Dessa forma, o servidor é a fonte que disponibiliza o conteúdo, enquanto o
+      navegador do usuário é quem interpreta e exibe o HTML na tela.
+    </p>
+
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="linguagens">Sobre linguagens de programação web</h2>
+    <p>
+      O HTML não é considerado uma linguagem de programação, mas sim uma
+      linguagem de marcação <i>(HyperText Markup Language)</i>. Sua função
+      principal é estruturar o conteúdo da web, não processar lógica complexa.
+    </p>
+
+    <h3>O que é HTML?</h3>
+    <p>
+      O HTML serve como o alicerce para a construção de páginas web. Ele utiliza
+      "tags" para organizar e definir como os elementos
+      <i>(como títulos parágrafos, imagens e links)</i> devem ser exibidos em um
+      navegador. Ele informa ao navegador a estrutura e a semântica do conteúdo.
+    </p>
+
+    <h3>Linguagens de Programação Web</h3>
+    <p>
+      Diferentemente do HTML, as linguagens de programação web possuem lógica
+      robusta, permitindo a criação de variáveis, estruturas condicionais
+      <i>(if/else)</i>, loops e algoritmos. Elas são usadas para adicionar
+      funcionalidade e comportamento dinâmico aos sites.
+    </p>
+
+    <h3>Exemplos de linguagens de programação web incluem:</h3>
+    <ul>
+      <li>
+        <strong>JavaScript: </strong>Usada principalmente no front-end
+        <i>(parte visual e interativa do site)</i>, mas também no back-end
+        (servidor).
+      </li>
+      <li>
+        <strong>Python: </strong>
+        Linguagem versátil, muito utilizada no back-end e para análise de dados.
+      </li>
+      <li>
+        <strong>PHP: </strong>Focada no desenvolvimento back-end do lado do
+        servidor.
+      </li>
+      <li>
+        <strong>Java, C#, Ruby: </strong>
+        Outras linguagens populares usadas para desenvolvimento web e de
+        software.
+      </li>
+    </ul>
+    <p>
+      Em resumo, o HTML fornece a estrutura, enquanto as linguagens de
+      programação <i>(junto com CSS para o estilo)</i> adicionam a
+      funcionalidade e o comportamento de um site completo.
+    </p>
+
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="ferramentas">Ferramentas utilizadas</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="inspetor">Usando o Inspetor de Elementos</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="tags">Falando sobre Tags</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="atributos">Atributos básicos</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="executando">Executando uma página HTML</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="textos">Textos</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="listas">Listas ordenadas e não ordenada</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+
+    <h2 id="links">Links</h2>
+    <small><a href="#inicio">Voltar</a></small>
+    <hr />
+  </body>
 </html>
